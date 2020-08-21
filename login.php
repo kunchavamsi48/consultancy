@@ -33,7 +33,8 @@ if(mysqli_num_rows($result) == 1) {
 	
 		
 		
-		header("location:https://waltairbs.com/home.php");
+// 		header("location:https://waltairbs.com/home.php");
+	header("location:home.php");
 		
 		
 	
