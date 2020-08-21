@@ -1,0 +1,59 @@
+<?php
+ session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+            <div class="container">
+                <div class = "logo">
+                    <img src="logo1.png" >
+                    <p><strong>A</strong>cuerdo International</p>
+                </div>
+                <div class="user">
+                    
+                    <form action="login.php" method = "post">
+                        <label for="uid">Username</label>
+                        <input type="text" name="uid" placeholder="eg:john98">
+                        <label for="pwd">Password</label>
+                        <input type="password" name="pwd" placeholder="eg:pass@12">
+                        <button tyoe="submit">Login</button>
+                    </form>
+                     
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" >About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li id="current"><a href="clients.html">Clients</a></li>
+                    <li><a href="career.php">Careers</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    
+                </ul>
+            </nav>    
+    </header>
+    <img src="stk9.jpg" id="img1" width="1525" height="400">
+        <div class="centeredx1" id="bg1">
+           Clients
+    </div>
+    <div  class="container0">
+        <h1 class="head1" >We value our clients and take pride in working with them</h1>
+        <br>
+        <h4 class="head4" >Our clients 
+</h4>
+<br>
+    <p id="tx1">
+New technologies and business models are driving companies to transform at lightning speed for a digital, customer-first world. Wipro’s Consulting practice helps business leaders respond to their customers’ needs by driving digital-first transformation: from operations to technologies to people.<br>
+</body>
+</html>

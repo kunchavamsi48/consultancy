@@ -1,0 +1,45 @@
+
+table{
+    width:70%;
+    margin-left:15%;
+    border:10px solid grey;
+    border-radius:30px;
+    padding:1%;
+}
+#ques{
+    width:50%;
+    font-weight: bold;
+    padding:1%;
+}
+#response{
+    width:50%;
+    border:1px solid black;
+    padding:1%;
+    margin:1%;
+}
+.edit{
+    width:10%;
+    margin-left:45%;
+    margin-top:40%;
+}
+h1{
+    margin-left:45%;
+}
+form{
+    width:70%;
+    margin-left:15%;
+    border:10px solid grey;
+    border-radius:30px;
+    padding:1%;
+}
+form label{
+    width:50%;
+    font-weight:bold;
+    padding:10%;
+}
+form input{
+    width:50%;
+    border:1px solid black;
+    padding:1%;
+    margin:1%;
+}

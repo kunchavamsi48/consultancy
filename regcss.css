@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    margin-left: 5% ;
+    margin-right: 5% ;
+    background: #f1f1f1;
+  }
+  #ft0
+  {
+      background-image: url("stk18.jpg");
+      background-size: 200%;
+      background-repeat: no-repeat;
+      border-style: none;
+      border-radius: 5%;
+  }
+  #ft2
+  {
+  background: #36c;
+  background:
+  linear-gradient(115deg, transparent 75%, rgba(255,255,255,.8) 75%) 0 0,
+  linear-gradient(245deg, transparent 75%, rgba(255,255,255,.8) 75%) 0 0,
+  linear-gradient(115deg, transparent 75%, rgba(255,255,255,.8) 75%) 7px -15px,
+  linear-gradient(245deg, transparent 75%, rgba(255,255,255,.8) 75%) 7px -15px,
+  #36c;
+  }
+  #ft3
+  {
+      opacity: 0.5;
+  }
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+    margin: 0px;
+  }
+  
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    margin-left: 0px;
+    margin-top: 12.5%;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-left: 30%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  #small
+  {
+      font-size: 15px;
+      text-align: left;
+  }
+  #pos1
+  {
+      transform: translate(+0%, -30%);
+  }
+ 
+  #buttons3
+  {
+      padding: 1%;
+      color: white;
+      background-color: green;
+      border-style: hidden;
+      border-radius: 5%;
+      margin-top:3%;
+    
+  }
+ 
+  #buttons3:hover { 
+    -webkit-filter: brightness(450%);
+  }
+  h1
+  {
+      text-align: center;
+      color: aliceblue;
+      font-size: 60px;
+      font-family: "times new roman";
+  }
+  #head
+  {
+      background: rgba(0, 151, 19, 0.1);
+      margin: 0px;
+      padding: 5%;
+  }
+  h2
+  {
+      font-size: 20px;
+  }
+  .dispimg
+  {
+  
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px purple; 
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #F7DC6F; 
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background:#85929E;
+  }
+  form
+  {
+
+  }
+  input
+  {
+      padding-bottom: 2%;
+      width:100%;
+      display: block;
+      padding-right: 7%;
+      line-height: 1.42857143;
+      border-radius: 5%;
+          word-wrap: break-word;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    
+      
+  }
