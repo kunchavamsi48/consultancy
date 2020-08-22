@@ -287,23 +287,48 @@ em
   text-align: center;
   text-decoration: none;
 }
+#push
+{
+	margin-right: 45%;
+	margin-bottom: 5%;
+}
 .fa-facebook {
   background: #3B5998;
   color: white;
+  float: right;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  padding-left:100px;
 }
 
 .fa-google {
   background: #dd4b39;
   color: white;
+  float: right;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  padding-left:100px;
 }
 
 .fa-linkedin {
   background: #007bb5;
   color: white;
+  float: right;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  padding-left:100px;
 }
 .fa-instagram {
   background: #125688;
   color: white;
+  float: right;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  padding-left:100px;
 }
 /*for the droupdown at logout*/
 .dropbtn {
