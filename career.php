@@ -33,6 +33,7 @@ require "config.php";
                      
                 </div>
             </div>
+            <div class = "menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -44,8 +45,36 @@ require "config.php";
                     
                 </ul>
             </nav>    
+            <div id="mySidenav" class="sidenav">
+			    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="clients.html">Clients</a>
+                <a href="career.php">Careers</a>
+                <a href="contact.html">Contact us</a>
+                <br><br><br>
+                <form action="login.php" method = "post">
+                    <a href=""><label for="uid">Username</label></a>
+                    <input type="text" name="uid" placeholder="eg:john98"><br>
+                    <a href=""><label for="pwd">Password</label></a>
+                    <input type="password" name="pwd" placeholder="eg:pass@12"><br>
+                    <button tyoe="submit">Login</button>
+                </form>
+		</div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                // document.getElementById("inavigation,inbody,footer,marquee").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                // document.getElementById("inavigation,inbody,footer,marquee").style.marginLeft= "0";
+            }
+        </script>
     </header>
-   <img src="stk12.jpg" id="img1" width="1525" height="400">
+   <img src="stk12.jpg" id="img1" width="100%" height="400">
         <div class="centeredx" id="bg1">
            Careers
     </div>
@@ -64,6 +93,8 @@ For further information, feel free to contact us through social media or through
 </div>
 </div>
 </div>
+<br><br><br>
+<center>
 <div class="jobs">
 <div class="fil">
   
@@ -73,14 +104,15 @@ For further information, feel free to contact us through social media or through
              <option value="IT">Information and Technology</option>
              <option value="management">Management</option>
         </select>
-        <input type="submit" value="filter">
+        <input type="submit" value="filter" style="width:4.5em">
         </form>
         <div class = 'jobdesc'>
         <?php
         if(isset($_POST['fields'])){
             $opt = $_POST['fields'];
-        echo "<table >
+        echo "<table border=2>
             <tr>
+                <br><br>
                 <th>Type of services</th>
                 <th>Job details</th>
             </tr>";
@@ -109,8 +141,9 @@ For further information, feel free to contact us through social media or through
         }
         
         }else{
-            echo "<table >
+            echo "<table border=2>
             <tr>
+                <br>
                 <th>Type of services</th>
                 <th>Job details</th>
             </tr>";
@@ -133,5 +166,6 @@ For further information, feel free to contact us through social media or through
     
 </div>
 </div>
+</center>
 </body>
 </html>

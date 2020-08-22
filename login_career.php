@@ -38,6 +38,7 @@ if(!isset($_SESSION['username'])){
                  </div>
              </div>
             </div>
+            <div class = "menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</div>
             <nav>
                 <ul>
                 <li><a href="home.php">Home</a></li>
@@ -48,9 +49,42 @@ if(!isset($_SESSION['username'])){
                     <li><a href="login_contact.php">Contact us</a></li>
                     
                 </ul>
-            </nav>    
+            </nav>
+            <div id="mySidenav" class="sidenav">
+			    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.php">Home</a>
+                <a href="login_about.php">About us</a>
+                <a href="login_services.php">Services</a>
+                <a href="login_clients.php">Clients</a>
+                <a href="login_career.php">Careers</a>
+                <a href="login_contact.php">Contact us</a>
+                <br><br><br>
+                <button class="dropbtn"><i class="fa fa-user"></i>  <?php echo $_SESSION['username'] ?></button>
+                     
+                     <a href="timetrack.php">time tracker</a>
+                    <a href="profile.php">profile</a>
+                    <?php 
+                    if($_SESSION['status'] == 'admin')
+                    {
+                        echo "<a href='adminpage.php'> Manage </a>";
+                    } 
+                    ?>
+                    <a href="logout.php">logout  <i class="fa fa-sign-out"></i></a>
+                
+		</div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                // document.getElementById("inavigation,inbody,footer,marquee").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                // document.getElementById("inavigation,inbody,footer,marquee").style.marginLeft= "0";
+            }
+        </script>    
     </header>
-    <img src="stk12.jpg" id="img1" width="1525" height="400">
+    <img src="stk12.jpg" id="img1" width="100%" height="400">
         <div class="centeredx" id="bg1">
            Careers
     </div>
@@ -69,6 +103,7 @@ For further information, feel free to contact us through social media or through
 </div>
 </div>
 </div>
+<center>
 <div class="jobs">
 <div class="fil">
   
@@ -114,7 +149,7 @@ For further information, feel free to contact us through social media or through
         }
         
         }else{
-            echo "<table >
+            echo "<table>
             <tr>
                 <th>Type of services</th>
                 <th>Job details</th>
@@ -126,6 +161,7 @@ For further information, feel free to contact us through social media or through
                 while($row = $result->fetch_assoc()){
                     echo "<tr>
                         <td>".$row["field_type"]."</td>
+                    
                         <td>".$row["jobs"]."</td>
                     </tr>";
                 }
@@ -138,5 +174,6 @@ For further information, feel free to contact us through social media or through
     
 </div>
 </div>
+</center>
 </body>
 </html>
