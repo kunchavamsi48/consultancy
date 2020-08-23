@@ -31,7 +31,7 @@
     <div id="ft3" class="card">
     	<br>
     	
-      <h2 id="pos1">XYZ Consultancies</h2>
+      <h2 id="pos1">Acuerdo International</h2>
       <br>
       <br>
       

@@ -510,4 +510,15 @@ em
     float: right;
     transform: translate(+5%, -40%);
 }
+.dropbtn {
+	display:none;
+    background-color: white;
+    color: blue;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 100%;
+}
 }

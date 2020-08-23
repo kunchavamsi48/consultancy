@@ -37,6 +37,8 @@
                      
                 </div>
             </div>
+            
+            <div class = "menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</div>
             <nav>
                 <ul>
                     <li><a href="home.php"><i class="fa fa-arrow-circle-left" style="font-size:48px;color:red"></i></a>
@@ -44,6 +46,25 @@
                     <li><a href="addjob.php">ADD JOBS IN CAREER</a></li>
                 </ul>
             </nav>    
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="home.php"><i class="fa fa-arrow-circle-left" style="font-size:48px;color:red"></i></a>
+                    <a href="register.php">NEW REGISTRATION</a>
+                    <a href="addjob.php">ADD JOBS IN CAREER</a>
+                <br><br><br>
+                <a href="logout.php">logout  <i class="fa fa-sign-out"></i></a>
+		</div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                // document.getElementById("inavigation,inbody,footer,marquee").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                // document.getElementById("inavigation,inbody,footer,marquee").style.marginLeft= "0";
+            }
+        </script> 
     </header>
         
 </body>
