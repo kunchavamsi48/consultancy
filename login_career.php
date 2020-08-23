@@ -113,14 +113,15 @@ For further information, feel free to contact us through social media or through
              <option value="IT">Information and Technology</option>
              <option value="management">Management</option>
         </select>
-        <input type="submit" value="filter">
+        <input type="submit" value="filter" style="width:4.5em">
         </form>
         <div class = 'jobdesc'>
         <?php
         if(isset($_POST['fields'])){
             $opt = $_POST['fields'];
-        echo "<table >
+        echo "<table border=2>
             <tr>
+                <br><br>
                 <th>Type of services</th>
                 <th>Job details</th>
             </tr>";
@@ -149,8 +150,9 @@ For further information, feel free to contact us through social media or through
         }
         
         }else{
-            echo "<table>
+            echo "<table border=2>
             <tr>
+                <br>
                 <th>Type of services</th>
                 <th>Job details</th>
             </tr>";
@@ -161,7 +163,6 @@ For further information, feel free to contact us through social media or through
                 while($row = $result->fetch_assoc()){
                     echo "<tr>
                         <td>".$row["field_type"]."</td>
-                    
                         <td>".$row["jobs"]."</td>
                     </tr>";
                 }
