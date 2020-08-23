@@ -1,5 +1,5 @@
 <?php
-session_start();
+require 'config.php';
 if(!isset($_SESSION['username'])){
     header('location:index.html');
 }
@@ -24,7 +24,13 @@ if(!isset($_SESSION['username'])){
                     <p><strong>A</strong>cuerdo International</p>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn"><i class="fa fa-user"></i>  <?php echo $_SESSION['username'] ?></button>
+                    <button class="dropbtn"><i class="fa fa-user"></i>  <?php $id = $_SESSION['id']; 
+                    $q = "SELECT * FROM userdata WHERE uid = '$id'"; 
+                    $result = $con->query($q);
+                    while($row = $result->fetch_assoc()){
+                        echo $row['name'];
+                    }
+                    ?></button>
                      <div class="dropdown-content">
                      <a href="timetrack.php">time tracker</a>
                     <a href="profile.php">profile</a>

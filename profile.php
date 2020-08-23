@@ -15,18 +15,27 @@
 <h1>PROFILE</h1>
 <div  class="row">
 <div class = "profile_table">
+<?php
+$id = $_SESSION['id']; 
+$q = "SELECT * FROM userdata WHERE uid = '$id'"; 
+$result = $con->query($q);
+while($row = $result->fetch_assoc()){
+    $name = $row['name'];
+    $mail = $row['email'];
+}
+?>
 <table>
       <tr>
         <td id = "ques">NAME </td>
-        <td id = "response"><?php  echo $_SESSION['username'];?></td>
+        <td id = "response"><?php  echo $name;?></td>
       </tr>
       <tr>
         <td id = "ques">EMPLOYEE ID </td>
-        <td id = "response"> <?php $empid = $_SESSION['id'] + 1000; echo $empid; ?></td>
+        <td id = "response"> <?php $empid = $id + 1000; echo $empid; ?></td>
       </tr>
       <tr>
         <td id = "ques">EMAIL </td>
-        <td id = "response"><?php echo $_SESSION['mail'];?></td>
+        <td id = "response"><?php echo $mail;?></td>
       </tr>
     </table>
     <a href="edit_profile.php" class = "edit">Edit</a>
