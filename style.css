@@ -609,7 +609,7 @@ em
     font-size: 35px;
     color: white;
     font-family: "Times New Roman";
-    /* text-align: center; */
+    padding-left: 3.5em;
 }
 .centeredx2 {
     font-size: 40px;
