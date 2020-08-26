@@ -90,17 +90,13 @@ if(!isset($_SESSION['username'])){
             }
         </script>    
     </header>
-    <!--<h1 id = "heading">ABOUT</h1> -->
-    <img src="stk3.jpg" id="img1" width="100%" height="400">
-        <div  class="centeredx" id="bg1">
-            About us
+ <!--<h1 id = "heading">ABOUT</h1> -->
+ <div  class="fit_img-about" id="head">
+            We at Acuerdo international strive for perfection
     </div>
-<div  class="container0">
-        <h1 class="head1" >We at XYZ consultancy strive for perfection </h1>
-        <br>
-        <h4 class="head4">Our vision is to have every one of our customer's needs met perfectly
-</h4>
 <br>
+<br>
+<div  class="container0">
     <p id="tx1">
 Ours is an organisation with the primary focus on complete customer satisfasction
 and to provide our clients with the best possible services so as to boost their profits and help them
@@ -115,12 +111,12 @@ across various business verticals which ultimately enable us to align IT strateg
 </p>
     <br>
     <br>
-    <img src="stk4.jpg" id="img2" width="90%" height="300">
-        <div class="centeredy" id="bg1">
+    </div>
+    <hr>
+        <div  class="centeredy">
             Our business model
     </div>
-    <br>
-    <br>
+    <div style="margin-top: 150px" class="container0">
     <p id="tx1">
     We understand the complexities of recruiting staff for your companies and how choosing the right people for the right job can help come a long way in boosting company productivity and profits. <br>
     <br>
@@ -135,4 +131,7 @@ across various business verticals which ultimately enable us to align IT strateg
 </div>
 </div>
 </body>
+<footer>
+    Copyright 2020 Acuerdo International ltd
+</footer>
 </html>

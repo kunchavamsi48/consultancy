@@ -38,7 +38,8 @@ while($row = $result->fetch_assoc()){
         <td id = "response"><?php echo $mail;?></td>
       </tr>
     </table>
-    <a href="edit_profile.php" class = "edit">Edit</a>
+    <a href="edit_profile.php" class = "edit">Edit</a><br><br>
+    <a href="edit_password.php" class = "edit">change password</a>
 </div>  
 </body>
 

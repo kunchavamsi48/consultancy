@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 if(!isset($_SESSION['username'])){
-    header('location:index.html');
+    header('location:index.html'); 
 }
 ?>
 
@@ -93,18 +93,15 @@ if(!isset($_SESSION['username'])){
             }
         </script>     
     </header>
-    <img src="stk1.jpg" id="img1" width="100%" height="400">
-        <div class="centeredx" id="bg1">
-        Acuerdo International
+    <div  id="head" class="fit_img">
+            Acuerdo International
     </div>
     <div  class="container0">
-        <h1 class="head1" >We at XYZ consultancy strive for perfection </h1>
-        <br>
-        <h4 class="head4" >Reimagine your business with a hands-on thought partner to help you define, design, and deliver results 
+        <h4 class="head1" >Reimagine your business with a hands-on thought partner to help you define, design, and deliver results 
 </h4>
 <br>
     <p id="tx1">
-New technologies and business models are driving companies to transform at lightning speed for a digital, customer-first world. Wipro’s Consulting practice helps business leaders respond to their customers’ needs by driving digital-first transformation: from operations to technologies to people.<br>
+New technologies and business models are driving companies to transform at lightning speed for a digital, customer-first world. Acuerdo's Consulting practice helps business leaders respond to their customers’ needs by driving digital-first transformation: from operations to technologies to people.<br>
 <br>
 Leading global analyst firms name us leaders in digital transformation strategy and consulting. And global Fortune 500 companies work with us because we deliver integrated strategy, digital and domain expertise, and apply analytics and insights to help them find hidden value.<br>
 <br>
@@ -113,4 +110,7 @@ With a strong heritage of innovation and entrepreneurship in technology services
 </div>
 </div>
 </body>
+<footer>
+    Copyright 2020 Acuerdo International ltd
+</footer>
 </html>

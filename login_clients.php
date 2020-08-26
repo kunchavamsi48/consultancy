@@ -4,7 +4,7 @@ require 'config.php';
      header('location:index.html');
  }
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -90,18 +90,18 @@ require 'config.php';
             }
         </script>      
     </header>
-    <img src="stk9.jpg" id="img1" width="100%" height="400">
-        <div class="centeredx1" id="bg1">
-           Clients
+    <div  style="font-size:bolder" id="head" class="fit_img-clients">
+            We value our clients and take pride in working with them
     </div>
     <div  class="container0">
-        <h1 class="head1" >We value our clients and take pride in working with them</h1>
-        <br>
-        <h4 class="head4" >Our clients 
-</h4>
 <br>
     <p id="tx1">
-New technologies and business models are driving companies to transform at lightning speed for a digital, customer-first world. Wipro’s Consulting practice helps business leaders respond to their customers’ needs by driving digital-first transformation: from operations to technologies to people.<br>
-
+New technologies and business models are driving companies to transform at lightning speed for a digital, customer-first world. Acuerdo's Consulting practice helps business leaders respond to their customers’ needs by driving digital-first transformation: from operations to technologies to people.
+</p>
+</div>
 </body>
+<footer>
+    Copyright 2020 Acuerdo International ltd
+</footer>
 </html>
+

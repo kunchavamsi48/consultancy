@@ -17,7 +17,7 @@ if(!isset($_SESSION['username'])){
 </head>
 <body>
     <header>
-        
+         
             <div class="container">
                 <div class = "logo">
                     <img src="logo1.png" >
@@ -90,8 +90,7 @@ if(!isset($_SESSION['username'])){
             }
         </script>    
     </header>
-    <img src="stk12.jpg" id="img1" width="100%" height="400">
-        <div class="centeredx" id="bg1">
+    <div  class="fit_img-about" id="head">
            Careers
     </div>
     <div  class="container0">
@@ -109,6 +108,7 @@ For further information, feel free to contact us through social media or through
 </div>
 </div>
 </div>
+<br><br><br>
 <center>
 <div class="jobs">
 <div class="fil">
@@ -175,12 +175,16 @@ For further information, feel free to contact us through social media or through
             }  
 
         }
-        echo" </table>";
+        echo" </table><br><br>";
     ?>
         </div>
     
 </div>
 </div>
 </center>
+
 </body>
+<footer>
+    Copyright 2020 Acuerdo International ltd
+</footer>
 </html>

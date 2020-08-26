@@ -3,7 +3,7 @@ require 'config.php';
  if(!isset($_SESSION['username'])){
      header('location:index.html');
  }
-?>
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,19 +90,24 @@ require 'config.php';
             }
         </script>
     </header>
-    <img src="stk11.jpg" id="img1" width="100%" height="400">
-        <div class="centeredx" id="bg1">
-            Contact us
+    <div  style="font-size:bolder" id="head" class="fit_img-contact">
+            Contact Us
     </div>
-    <div  class="container_contact">
+    <div  class="container_contact" style = "margin-bottom:20px;">
         <h1 class="head1" >You can reach out to us on social media or through mail</h1>
         <br>
         <br>
-        <a href="#" id="push" class="fa fa-facebook"></a>
-        <a href="#" id="push" class="fa fa-linkedin"></a>
-        <a href="#" id="push" class="fa fa-instagram"></a>
-        <a href="#" id="push" class="fa fa-google"></a>
-</div>
+        <h2 style = "text-align:center">Also follow us on</h2>
+        <div class = "social_media" style = "text-align:center">
+            <a href="#" id="push" class="fa fa-facebook"></a>
+            <a href="#" id="push" class="fa fa-linkedin"> </a>
+            <a href="#" id="push" class="fa fa-instagram"> </a>
+            <!-- <a href="#" id="push" class="fa fa-google"> </a> -->
+        </div>
+      
 </div>
 </body>
+<footer >
+    Copyright 2020 Acuerdo International ltd
+</footer>
 </html>

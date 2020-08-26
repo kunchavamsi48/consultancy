@@ -37,15 +37,19 @@
       
       	<form method = "post">
      <label for="fname">Full Name:</label><br>
-     <input  type="text" id="fname" name="fname" ><br>
+     <input  type="text" id="fname" name="fname" required><br> 
      <label for="uname">Username:</label><br>
-     <input  type="text" id="uname" name="uname" ><br>
+     <input  type="text" id="uname" name="uname" required><br>
      <label for="email">Email</label>
-     <input type="text" name = "email">
+     <input type="text" name = "email" required>
      <label for="password">Password</label>
-     <input type="text" name = "password">
+     <input type="text" name = "password" required>
      <label for="status">Status</label>
-     <input type="text" name = "status">
+     <select name="status" style = "padding:1%;font-size:15px;width:50%;margin-top:3%;" required>
+            <option value="emp">EMPLOYEE</option>
+            <option value="admin">ADMIN</option>
+          </select>
+     <!-- <input type="text" name = "status"> -->
      <input type="submit" id = "buttons3" value = "register">
       	</form>
       
